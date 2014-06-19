@@ -1,0 +1,7 @@
+language: ruby
+bundler_args: --without kitchen_vagrant kitchen_common
+rvm:
+  - 2.1
+  - 2.0.0
+script:
+- bundle exec rake style spec

@@ -1,0 +1,7 @@
+{
+  "id": "deployer",
+  "comment": "Deployer user",
+  "home": "/home/deployer",
+  "groups": ["deployer"],
+  "shell": "\/bin\/bash"
+}

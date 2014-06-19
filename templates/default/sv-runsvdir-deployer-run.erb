@@ -1,0 +1,3 @@
+#!/bin/sh
+exec 2>&1
+exec chpst -udeployer runsvdir <%= "#{node['dotpromo-rails-box']['app_dir']}/runit/enabled" %>
