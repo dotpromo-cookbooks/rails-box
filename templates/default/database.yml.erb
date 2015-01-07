@@ -2,8 +2,8 @@ production:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: <%= node['dotpromo-rails-box']['app_name'] %>_production
+  database: <%= node['dotpromo-rails-box']['app_name'].tr(' ', '_') %>_production
   pool:     5
-  username: netdesk
+  username: <%= node['dotpromo-rails-box']['app_name'].tr(' ', '_') %>
   password: <%= node['dotpromo-rails-box']['db_pass'] %>
   template: template0
